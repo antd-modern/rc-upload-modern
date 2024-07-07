@@ -1,5 +1,5 @@
 {
-  "name": "rc-upload",
+  "name": "rc-upload-modern",
   "version": "4.5.2",
   "description": "upload ui component for react",
   "keywords": [
@@ -28,18 +28,15 @@
     "coverage": "rc-test --coverage",
     "docs:build": "dumi build",
     "docs:deploy": "npm run docs:build && gh-pages -d .doc",
-    "lint": "eslint src/ --ext .ts,.tsx,.jsx,.js,.md",
     "now-build": "npm run docs:build",
-    "prepublishOnly": "npm run compile && np --yolo --no-publish",
     "prettier": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
-    "postpublish": "npm run docs:deploy",
     "start": "dumi dev",
     "test": "rc-test"
   },
   "dependencies": {
     "@babel/runtime": "^7.18.3",
     "classnames": "^2.2.5",
-    "rc-util": "^5.2.0"
+    "rc-util": "npm:rc-util-modern@^5.2.0"
   },
   "devDependencies": {
     "@rc-component/father-plugin": "^1.0.0",
@@ -54,7 +51,7 @@
     "coveralls": "^3.0.3",
     "cross-env": "^7.0.0",
     "dumi": "^2.1.0",
-    "eslint": "^7.1.0",
+    "eslint": "^8.57.0",
     "father": "^4.0.0",
     "fs-extra": "^9.0.0",
     "gh-pages": "^6.1.1",
